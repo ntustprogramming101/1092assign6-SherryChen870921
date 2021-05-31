@@ -1,4 +1,23 @@
-class Cabbage {
+class Cabbage extends Item {
+  
+    Cabbage(float x,float y){
+    super(x,y);
+      
+    }
+    
+void display(){
+  image(cabbage, x, y);
+}
+ 
+void checkCollision(Player player){
+
+  if(isHit(x, y, w, h, player.x, player.y, player.w, player.h)){
+
+      player.health++;
+      x=y=-1000;
+  }
+}
+  
 	// Requirement #1: Complete Cabbage Class
 
 	/*
