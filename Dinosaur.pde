@@ -23,8 +23,7 @@ void display(){
     if (direction == RIGHT) {
       scale(1, 1);
       image(dinosaur, 0, 0, w, h); 
-    } 
-    if (direction == LEFT){
+    } else{
       scale(-1, 1);
       image(dinosaur, -w, 0, w, h); 
 
